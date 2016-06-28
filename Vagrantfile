@@ -20,7 +20,7 @@ $script_nexus = <<SCRIPT
 adduser nexus
 mkdir -p /opt/nexus
 cd /opt/nexus
-wget -nv -O --no-check-certificate https://sonatype-download.global.ssl.fastly.net/nexus/3/nexus-3.0.0-03-unix.tar.gz
+wget -nv https://sonatype-download.global.ssl.fastly.net/nexus/3/nexus-3.0.0-03-unix.tar.gz
 tar -zxvf nexus-3.0.0-03-unix.tar.gz
 ln -s nexus-3.0.0-03 latest
 cd latest/bin
